@@ -31,7 +31,7 @@ public class Main {
     }
 
     private static void tampilMenu() {
-        System.out.println("       MINI LIBRARY MANAGEMENT");
+        System.out.println("[       PERPUSTAKAAN SEDERHANA     ]");
         System.out.println("====================================");
         System.out.println("1. Tambah Buku");
         System.out.println("2. Tampilkan Semua Buku");
