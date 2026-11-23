@@ -4,13 +4,13 @@ public class Buku {
     private String penulis;
     private int stok;
     private double harga;
-    private Peminjaman kategori;
+    private Kategori kategori;
 
     public Buku() {
         this("B000", "Tanpa Judul", "Tanpa Penulis", 0, 0, null);
     }
 
-    public Buku(String kodeBuku, String judul, String penulis, int stok, double harga, Peminjaman kategori) {
+    public Buku(String kodeBuku, String judul, String penulis, int stok, double harga, Kategori kategori) {
         setKodeBuku(kodeBuku);
         setJudul(judul);
         setPenulis(penulis);
@@ -64,9 +64,9 @@ public class Buku {
         this.harga = harga;
     }
 
-    public Peminjaman getKategori() { return kategori; }
+    public Kategori getKategori() { return kategori; }
 
-    public void setKategori(Peminjaman kategori) { this.kategori = kategori; }
+    public void setKategori(Kategori kategori) { this.kategori = kategori; }
 
     public void tambahStok(int jumlah) {
         if (jumlah <= 0) {
@@ -86,7 +86,6 @@ public class Buku {
     }
 
     public boolean cekKetersediaan() { return stok > 0; }
-
 
     public void tampilkanInfo() {
         System.out.printf("%-8s | %-28s | %-18s | Stok: %-3d | Rp%,.0f | %s%n",
