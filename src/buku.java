@@ -1,16 +1,16 @@
-
+public class Buku {
     private String kodeBuku;
     private String judul;
     private String penulis;
     private int stok;
     private double harga;
-    private Kategori kategori;
+    private Peminjaman kategori;
 
     public Buku() {
         this("B000", "Tanpa Judul", "Tanpa Penulis", 0, 0, null);
     }
 
-    public Buku(String kodeBuku, String judul, String penulis, int stok, double harga, Kategori kategori) {
+    public Buku(String kodeBuku, String judul, String penulis, int stok, double harga, Peminjaman kategori) {
         setKodeBuku(kodeBuku);
         setJudul(judul);
         setPenulis(penulis);
@@ -64,9 +64,9 @@
         this.harga = harga;
     }
 
-    public Kategori getKategori() { return kategori; }
+    public Peminjaman getKategori() { return kategori; }
 
-    public void setKategori(Kategori kategori) { this.kategori = kategori; }
+    public void setKategori(Peminjaman kategori) { this.kategori = kategori; }
 
     public void tambahStok(int jumlah) {
         if (jumlah <= 0) {
