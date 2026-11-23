@@ -1,7 +1,3 @@
-<<<<<<< Updated upstream
-## UTS ORIENTED OBJECT PROGRAMING
+# UTS OBJECT ORIENTED PROGRAMING
 
-> HUHUU HAHAAA
-=======
-halolo
->>>>>>> Stashed changes
+>> huuhuu haaa
