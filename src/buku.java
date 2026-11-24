@@ -17,7 +17,7 @@ public class Buku {
         setStok(stok);
         setHarga(harga);
         this.kategori = kategori;
-    }
+    }   
 
     public String getKodeBuku() { return kodeBuku; }
 
